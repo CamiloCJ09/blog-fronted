@@ -14,8 +14,6 @@ interface UserCredentials extends Credentials  {
 }
 
 const login = (credentials: Credentials) => {
-  console.log(URL_API)
-  console.log(credentials)
   try{
     return axios.post(`${URL_API}login`, credentials)
   }catch (error){

@@ -39,10 +39,6 @@ const PostLayoutModal = ({
   }
 
   const handleComment = () => {
-    console.log(comment)
-    console.log(postId)
-    console.log(commentId)
-    console.log(isEdit)
     if (isEdit && commentId && comment) {
       const data = {
         userId: String.raw`${localStorage.getItem("userId") || ""}`,

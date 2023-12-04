@@ -4,19 +4,12 @@ import Posts from "../views/posts"
 import SignUp from "../views/signUp"
 
 interface Props {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   children: React.ReactComponentElement<any>
 }
 
-const ProtectedRoutes = ({ children }: Props) => {
-  if (localStorage.getItem("token") === null) {
-    return <Navigate to="/login" />
-  } else {
-    return children
-  }
-}
 
 const IsNotLogged = ({ children }: Props) => {
-  console.log(localStorage.getItem("token"))
   if (localStorage.getItem("token") !== null) {
     return children
   } else {

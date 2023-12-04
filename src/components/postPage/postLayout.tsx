@@ -42,7 +42,6 @@ const PostLayout = ({ posts, setNewPost }: PostsProps) => {
   const handleAddComment = (actualPostId: number) => {
     setPostId(actualPostId)
     setShowModal(true)
-    console.log(actualPostId)
   }
 
   const handleShowComments = (actualPostId: number) => {
