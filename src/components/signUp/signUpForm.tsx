@@ -135,7 +135,8 @@ const SignUpForm = () => {
                 Password
               </InputLabel>
               <OutlinedInput
-                id="outlined-adornment-password"
+                id="password"
+                name="password"
                 type={showPassword ? "text" : "password"}
                 required={true}
                 endAdornment={
@@ -159,7 +160,8 @@ const SignUpForm = () => {
                 Password
               </InputLabel>
               <OutlinedInput
-                id="outlined-adornment-password"
+                id="confirmPassword"
+                name="confirmPassword"
                 type={showPassword ? "text" : "password"}
                 required={true}
                 endAdornment={

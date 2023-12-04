@@ -65,7 +65,7 @@ const PostForm = ({
     postServices.createPost(data)
     setIsOpen(false)
     window.location.reload()
-    
+
   }
   const handleClose = () => {
     setIsOpen(false)
@@ -88,6 +88,7 @@ const PostForm = ({
             defaultValue={title}
             placeholder="Enter your title"
             variant="bordered"
+            name="title"
           />
           <Textarea
             isRequired={true}
@@ -95,6 +96,7 @@ const PostForm = ({
             defaultValue={content}
             onChange={(e) => handleContentChange(e)}
             placeholder="Enter your post content"
+            name="content"
           />
         </ModalBody>
         <ModalFooter>
@@ -106,6 +108,7 @@ const PostForm = ({
             variant="flat"
             isDisabled={title === "" || content === ""}
             onPress={handleSubmission}
+            name="submit"
           >
             Ok
           </Button>

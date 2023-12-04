@@ -77,10 +77,10 @@ const PostLayout = ({ posts, setNewPost }: PostsProps) => {
       <div className="flex flex-col justify-center items-center">
         <h1 className=" m-3 font-bold">Post Layout</h1>
         <div className="flex flex-row space-x-2">
-          <Button color="primary" onClick={handleCreatePost}>
+          <Button color="primary" onClick={handleCreatePost} name="createPost">
             Create Post
           </Button>
-          <Button color="primary" onClick={handleLogout}>
+          <Button color="primary" onClick={handleLogout} name="logout">
             Logout
           </Button>
         </div>

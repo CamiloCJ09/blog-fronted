@@ -97,7 +97,8 @@ const LoginForm = () => {
                 Password
               </InputLabel>
               <OutlinedInput
-                id="outlined-adornment-password"
+                id="password"
+                name="password"
                 type={showPassword ? "text" : "password"}
                 required={true}
                 endAdornment={
